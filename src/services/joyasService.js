@@ -3,8 +3,8 @@ const format = require('pg-format');
 const config = {
   host: process.env.PG_HOST,
   database: process.env.PG_DB,
-  user: 'postgres',
-  password: 'Waterpol01#',
+  user: process.env.PG_USER,
+  password: process.env.PG_PG_PASSWORD,
   port: process.env.PG_PORT,
   allowExitOnIdle: true,
 };
